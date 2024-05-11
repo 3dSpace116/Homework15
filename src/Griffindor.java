@@ -20,7 +20,7 @@ public class Griffindor extends Hogwarts {
 
     @Override
     public String toString() {
-        return super.getName() +
+        return super.toString() +
                 " Faculty Griffindor " +
                 " nobility=" + nobility +
                 ", honor=" + honor +
