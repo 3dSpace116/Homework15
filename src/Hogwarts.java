@@ -13,14 +13,22 @@ public abstract class Hogwarts {
         return name;
     }
 
-    public String toString() {
-        return name + " wichcraft= " + wichcraft + " transgression= " + transgression;
+    public int getWichcraft() {
+        return wichcraft;
     }
 
-    public static String comparsionStudent(Hogwarts student1, Hogwarts student2) {
+    public int getTransgression() {
+        return transgression;
+    }
+
+    public String toString() {
+        return getName() + " wichcraft= " + getWichcraft() + " transgression= " + getTransgression();
+    }
+
+    public static void comparsionStudent(Hogwarts student1, Hogwarts student2) {
         if ((student1.wichcraft + student1.transgression) > (student2.wichcraft + student2.transgression)) {
-            return student1.name + " обладает большей мощностью магии чем " + student2.name;
-        } else return student2.name + " обладает большей мощностью магии чем " + student1.name;
+            System.out.println( student1.name + " обладает большей мощностью магии чем " + student2.name);
+        } else System.out.println(student2.name + " обладает большей мощностью магии чем " + student1.name);
     }
 
 
@@ -51,7 +59,7 @@ public abstract class Hogwarts {
         Kogtewran.comparsionStudent(PadmaPatil, MarcusBelby);
         Slizerin.comparsionStudent(DracoMalfoy, GregoryGoyle);
 
-        System.out.println(Hogwarts.comparsionStudent(ZachariasSmith, GrahamMontague));
+        Hogwarts.comparsionStudent(ZachariasSmith, GrahamMontague);
 
 
     }
