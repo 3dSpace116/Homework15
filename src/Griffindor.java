@@ -14,8 +14,7 @@ public class Griffindor extends Hogwarts {
         if ((obj1.nobility + obj1.honor + obj1.bravery) > (obj2.nobility + obj2.honor + obj2.bravery)) {
             System.out.println(obj1.getName() + " лучший Гриффиндорец, чем " + obj2.getName());
 
-        }
-        System.out.println(obj2.getName() + " лучший Гриффиндорец, чем " + obj1.getName());
+        } else System.out.println(obj2.getName() + " лучший Гриффиндорец, чем " + obj1.getName());
     }
 
     @Override

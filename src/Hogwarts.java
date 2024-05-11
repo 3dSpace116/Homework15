@@ -13,14 +13,6 @@ public abstract class Hogwarts {
         return name;
     }
 
-    public int getWichcraft() {
-        return wichcraft;
-    }
-
-    public int getTransgression() {
-        return transgression;
-    }
-
     public String toString() {
         return name + " wichcraft= " + wichcraft + " transgression= " + transgression;
     }
