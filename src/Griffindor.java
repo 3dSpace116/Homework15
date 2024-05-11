@@ -16,11 +16,14 @@ public class Griffindor extends Hogwarts {
 
         } else System.out.println(obj2.getName() + " лучший Гриффиндорец, чем " + obj1.getName());
     }
+    
 
     @Override
     public String toString() {
-        return super.toString() +
+        return getName() +
                 " Faculty Griffindor " +
+                " wichcraft= " + getWichcraft() +
+                " transgression= " + getTransgression()+
                 " nobility=" + nobility +
                 ", honor=" + honor +
                 ", bravery=" + bravery;

@@ -22,7 +22,9 @@ public abstract class Hogwarts {
     }
 
     public String toString() {
-        return getName() + " wichcraft= " + getWichcraft() + " transgression= " + getTransgression();
+        return getName() +
+                " wichcraft= " + getWichcraft() +
+                " transgression= " + getTransgression();
     }
 
     public static void comparsionStudent(Hogwarts student1, Hogwarts student2) {

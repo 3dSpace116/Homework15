@@ -23,8 +23,10 @@ public class Slizerin extends Hogwarts {
 
     @Override
     public String toString() {
-        return super.toString() +
-                " Faculty Slizerin " +
+        return getName() +
+                ", Faculty Slizerin " +
+                ", wichcraft= " + getWichcraft() +
+                ", transgression= " + getTransgression()+
                 ", cunning=" + cunning +
                 ", determination=" + determination +
                 ", ambition=" + ambition +

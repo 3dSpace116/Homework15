@@ -21,9 +21,10 @@ public class Kogtewran extends Hogwarts {
 
     @Override
     public String toString() {
-        return super.toString() +
-                " Faculty Kogtewran " +
-                "smart=" + smart +
+        return getName() + " Faculty Kogtewran " +
+                ", wichcraft= " + getWichcraft() +
+                ", transgression= " + getTransgression() +
+                ", smart=" + smart +
                 ", wise=" + wise +
                 ", wit=" + wit +
                 ", creativity=" + creativity;
