@@ -22,8 +22,6 @@ public class Griffindor extends Hogwarts {
     public String toString() {
         return super.getName() +
                 " Faculty Griffindor " +
-                " transgression= "+super.getTransgression()+
-                " wichcraft"+super.getWichcraft()+
                 " nobility=" + nobility +
                 ", honor=" + honor +
                 ", bravery=" + bravery;
