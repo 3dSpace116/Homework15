@@ -20,7 +20,7 @@ public class Puffendui extends Hogwarts {
     @Override
     public String toString() {
         return super.toString() +
-                " Faculty Puffendui" +
+                " Faculty Puffendui " +
                 "hardWorker=" + hardWorker +
                 ", loyality=" + loyality +
                 ", honesty=" + honesty;
