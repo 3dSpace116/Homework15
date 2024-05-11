@@ -10,20 +10,17 @@ public class Puffendui extends Hogwarts {
         this.honesty = honesty;
     }
 
-    public static String comparsionStudent(Puffendui obj1, Puffendui obj2){
-        if ((obj1.hardWorker+obj1.loyality+obj1.honesty)>(obj2.hardWorker+obj2.loyality+obj2.honesty)){
-            return obj1.name + " лучший Пуффендуец, чем " + obj2.name;
+    public static void comparsionStudent(Puffendui obj1, Puffendui obj2) {
+        if ((obj1.hardWorker + obj1.loyality + obj1.honesty) > (obj2.hardWorker + obj2.loyality + obj2.honesty)) {
+            System.out.println(obj1.getName() + " лучший Пуффендуец, чем " + obj2.getName());
 
-        }
-        else return obj2.name+" лучший Пуффендуец, чем "+ obj1.name ;
+        } else System.out.println(obj2.getName() + " лучший Пуффендуец, чем " + obj1.getName());
     }
 
     @Override
     public String toString() {
-        return name +
+        return super.toString() +
                 " Faculty Puffendui" +
-                ", wichcraft=" + wichcraft +
-                ", transgression=" + transgression +
                 "hardWorker=" + hardWorker +
                 ", loyality=" + loyality +
                 ", honesty=" + honesty;

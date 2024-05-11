@@ -1,12 +1,24 @@
 public abstract class Hogwarts {
-    String name;
-    int wichcraft;
-    int transgression;
+    private String name;
+    private int wichcraft;
+    private int transgression;
 
     public Hogwarts(String name, int wichcraft, int transgression) {
         this.name = name;
         this.wichcraft = wichcraft;
         this.transgression = transgression;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getWichcraft() {
+        return wichcraft;
+    }
+
+    public int getTransgression() {
+        return transgression;
     }
 
     public String toString() {
@@ -42,10 +54,10 @@ public abstract class Hogwarts {
         System.out.println(ChoChang.toString());
         System.out.println(DracoMalfoy.toString());
 
-        System.out.println(Griffindor.comparsionStudent(HarryPotter, HermionaGranger));
-        System.out.println(Puffendui.comparsionStudent(ZachariasSmith,JustinFinchFletchley));
-        System.out.println(Kogtewran.comparsionStudent(PadmaPatil,MarcusBelby));
-        System.out.println(Slizerin.comparsionStudent(DracoMalfoy,GregoryGoyle));
+        Griffindor.comparsionStudent(HarryPotter, HermionaGranger);
+        Puffendui.comparsionStudent(ZachariasSmith, JustinFinchFletchley);
+        Kogtewran.comparsionStudent(PadmaPatil, MarcusBelby);
+        Slizerin.comparsionStudent(DracoMalfoy, GregoryGoyle);
 
         System.out.println(Hogwarts.comparsionStudent(ZachariasSmith, GrahamMontague));
 

@@ -14,20 +14,17 @@ public class Slizerin extends Hogwarts {
         this.lustForPower = lustForPower;
     }
 
-    public static String comparsionStudent(Slizerin obj1, Slizerin obj2){
-        if ((obj1.cunning+obj1.determination+obj1.ambition+ obj1.resourcefulness+obj1.lustForPower)>(obj2.cunning+obj2.determination+obj2.ambition+obj2.resourcefulness+obj2.lustForPower)){
-            return obj1.name + " лучший Слизеренец, чем " + obj2.name;
+    public static void comparsionStudent(Slizerin obj1, Slizerin obj2) {
+        if ((obj1.cunning + obj1.determination + obj1.ambition + obj1.resourcefulness + obj1.lustForPower) > (obj2.cunning + obj2.determination + obj2.ambition + obj2.resourcefulness + obj2.lustForPower)) {
+            System.out.println(obj1.getName() + " лучший Слизеренец, чем " + obj2.getName());
 
-        }
-        else return obj2.name+" лучший Слизеренец, чем "+ obj1.name ;
+        } else System.out.println(obj2.getName() + " лучший Слизеренец, чем " + obj1.getName());
     }
 
     @Override
     public String toString() {
-        return name +
+        return super.toString() +
                 " Faculty Slizerin" +
-                ", wichcraft=" + wichcraft +
-                ", transgression=" + transgression +
                 ", cunning=" + cunning +
                 ", determination=" + determination +
                 ", ambition=" + ambition +
